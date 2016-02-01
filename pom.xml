@@ -5,7 +5,10 @@
   <groupId>cz.muni.fi</groupId>
   <artifactId>techfides-example</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>Persistence</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <name>techfides-example</name>
   <url>http://maven.apache.org</url>
