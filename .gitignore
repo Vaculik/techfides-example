@@ -17,3 +17,5 @@ target/
 Persistence/target/
 Api/target/
 Service/target/
+InitialData/target/
+WebApp/target/

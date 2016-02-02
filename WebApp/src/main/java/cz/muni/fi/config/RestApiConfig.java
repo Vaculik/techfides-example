@@ -28,7 +28,7 @@ import java.util.Locale;
 @EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
 @Configuration
 @EnableWebMvc
-//@Import(InitialDataConfig.class)
+@Import(InitialDataConfig.class)
 @ComponentScan(basePackageClasses = {cz.muni.fi.controllers.SpacemanController.class, cz.muni.fi.hateoas.SpacemanResourceAssembler.class})
 public class RestApiConfig extends WebMvcConfigurerAdapter {
 
