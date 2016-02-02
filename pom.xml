@@ -9,6 +9,8 @@
     <module>Persistence</module>
     <module>Service</module>
     <module>Api</module>
+    <module>WebApp</module>
+    <module>InitialData</module>
   </modules>
   <packaging>pom</packaging>
 

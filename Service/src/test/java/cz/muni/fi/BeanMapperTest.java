@@ -41,16 +41,16 @@ public class BeanMapperTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void collectionMap() {
-        List<Spaceman> spacemans = new LinkedList<>();
-        List<SpacemanDTO> spacemanDTOs = new LinkedList<>();
+        List<Spaceman> spacemen = new LinkedList<>();
+        List<SpacemanDTO> spacemenDTO = new LinkedList<>();
 
-        spacemans.add(spacemanBuilder.build());
-        spacemanDTOs.add(spacemanBuilder.buildDTO());
+        spacemen.add(spacemanBuilder.build());
+        spacemenDTO.add(spacemanBuilder.buildDTO());
         spacemanBuilder.setFirstName("Charlie");
-        spacemans.add(spacemanBuilder.build());
-        spacemanDTOs.add(spacemanBuilder.buildDTO());
+        spacemen.add(spacemanBuilder.build());
+        spacemenDTO.add(spacemanBuilder.buildDTO());
 
-        Assert.assertEquals(beanMapper.map(spacemans, SpacemanDTO.class), spacemanDTOs);
-        Assert.assertEquals(beanMapper.map(spacemanDTOs, Spaceman.class), spacemans);
+        Assert.assertEquals(beanMapper.map(spacemen, SpacemanDTO.class), spacemenDTO);
+        Assert.assertEquals(beanMapper.map(spacemenDTO, Spaceman.class), spacemen);
     }
 }
