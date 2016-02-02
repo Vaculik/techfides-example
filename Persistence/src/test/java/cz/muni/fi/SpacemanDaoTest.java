@@ -1,6 +1,6 @@
 package cz.muni.fi;
 
-import cz.muni.fi.config.SpringApplicationContext;
+import cz.muni.fi.config.PersistenceApplicationContext;
 import cz.muni.fi.dao.SpacemanDao;
 import cz.muni.fi.entity.Spaceman;
 import cz.muni.fi.entity.Specialization;
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by Vaculik on 01/02/2016.
  */
-@ContextConfiguration(classes = SpringApplicationContext.class)
+@ContextConfiguration(classes = PersistenceApplicationContext.class)
 @TestExecutionListeners(TransactionalTestExecutionListener.class)
 @Transactional
 public class SpacemanDaoTest extends AbstractTestNGSpringContextTests {

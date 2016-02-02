@@ -23,7 +23,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @EnableJpaRepositories
 @ComponentScan(basePackageClasses = {cz.muni.fi.dao.SpacemanDao.class})
-public class SpringApplicationContext {
+public class PersistenceApplicationContext {
 
     @Bean
     public PersistenceExceptionTranslationPostProcessor postProcessor() {
