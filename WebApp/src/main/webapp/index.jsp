@@ -92,7 +92,7 @@ desired effect
                 <!-- Optionally, you can add icons to the links -->
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-odnoklassniki"></i>
                         <span>Spaceman</span>
                     </a>
                     <ul class="treeview-menu">
