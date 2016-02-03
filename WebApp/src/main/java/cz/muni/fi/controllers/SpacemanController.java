@@ -73,8 +73,8 @@ public class SpacemanController {
     }
 
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void createSpaceman(@RequestBody @Valid SpacemanDTO spacemanDTO, BindingResult bindingResult) {
+    @RequestMapping(value = "/create", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody void createSpaceman(@RequestBody @Valid SpacemanDTO spacemanDTO, BindingResult bindingResult) {
         logger.debug("POST new spaceman: {}", spacemanDTO);
         if (bindingResult.hasErrors()) {
             String msg = "Validation failed when create new spaceman: " + bindingResult.toString();
